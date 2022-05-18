@@ -1,0 +1,288 @@
+:root {
+    --branco: #FFFFFF;
+    --cinza: #667085;
+    --cinza-escuro: #101828;
+    --vinho: #8E2424;
+    --bordas: rgba(142, 36, 36, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.cabecalho {
+    margin: 1rem 3rem;
+}
+
+#logo {
+    position: absolute;
+    margin: .4rem 3.6rem;
+}
+
+nav {
+    text-align: center;
+    padding: .7rem;
+    margin-right: 11.1%;
+}
+
+nav li{
+    display: inline;
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+a:hover, button:hover{
+    color: #071c4a;
+}
+
+a:active, button:active{
+    color: #b71d1d
+}
+
+.botao {
+    position: absolute;
+    right: 7.5%;
+    top: 1rem;
+}
+
+button {
+    border: none;
+    background: none;
+    border-radius: 0.5rem;
+    color: var(--cinza);
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+}
+
+#cadastrar {
+    background-color: var(--vinho);
+    color: var(--branco);
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0;
+}
+
+.sobre span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--vinho);
+    padding: 24px;
+}
+
+.sobre h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.sobre p {
+    font-weight: 400;
+    color: var(--cinza);
+    text-align: center;
+    padding: 36px;
+    max-width: 48%;
+}
+
+.metricas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    padding: 0 8rem;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: var(--vinho);
+    font-size: 60px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.metrica {
+    color: var(--cinza-escuro);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+article span {
+    color: var(--cinza);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.talentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    gap: 1rem;
+}
+
+#vagas-abertas {
+    background: var(--bordas);
+    border-radius: 1rem;
+    color: var(--vinho);
+    padding: .3rem .7rem;
+}
+
+.talentos h1 {
+    font-size: 2rem;
+    color: var(--cinza-escuro);
+}
+
+.talentos p {
+    color: var(--cinza);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.talentos img {
+    width: 80%;
+    margin-top: 3rem;
+}
+
+.vagas {
+    padding-top: 4rem;
+}
+
+.vagas span.titulo {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.vaga {
+    border-radius: .9rem;
+    border: 1px solid #EAECF0;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    max-width: 50%;
+}
+
+.vaga span.titulo-vaga {
+    color: var(--cinza-escuro);
+    font-weight: 500;
+    margin-bottom: .9rem;
+}
+
+.vaga .informacoes {
+    color: var(--cinza);
+    font-size: 90%;
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.vaga:hover {
+    border-color: #141b29;
+}
+
+.vaga:active {
+    border-color: #b71d1d;
+}
+
+.avaliacao {
+    background-color: var(--bordas);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    margin: 8rem auto;
+    padding: 3rem 2rem;
+}
+
+.avaliacao .av-titulo {
+    font-size: .8rem;
+    color: var(--vinho);
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.avaliacao h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    color: var(--cinza-escuro);
+    font-weight: 500;
+}
+
+.avaliacao img {
+    padding: 1.7rem 0;
+}
+
+.avaliacao span {
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--cinza-escuro);
+    padding-bottom: .4rem;
+}
+
+#funcao {
+    font-size: .8rem;
+    color: var(--cinza);
+    font-weight: 400;
+}
+
+footer {
+    height: 24rem;
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+}
+
+footer p {
+    font-size: 1.1rem;
+    color: var(--cinza);
+}
+
+.cadastro {
+    padding: 1rem;
+}
+
+.cadastro input {
+    border-radius: .3rem;
+    border: .1rem solid #D0D5DD;
+    padding: .7rem 1rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+#cadastrar:active {
+    background-color: #6c1010;
+}
+
+footer span {
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--cinza);
+}
